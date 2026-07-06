@@ -5,7 +5,7 @@ def get_rating(reviews):
     if reviews:
         rating = sum(reviews)//len(reviews)
     return "⭐"*rating
-with open('project/menu.json', 'r') as f:
+with open('./menu.json', 'r') as f:
     data = json.load(f)
 # print('data', data)
 items = data.get('items',[])
